@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "tf-state.shahadarsh.com"
-    key = "vault/nginx/terraform.tfstate"
+    key = "aws-vpc-terraform/nginx/terraform.tfstate"
     region = "us-east-1"
   }
 }

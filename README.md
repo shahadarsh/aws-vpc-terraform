@@ -1,2 +1,2 @@
-# vault-aws-terraform
-Deploy Vault cluster on AWS using Terraform
+# aws-vpc-terraform
+Setup VPC on AWS using Terraform

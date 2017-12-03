@@ -3,7 +3,7 @@ data "terraform_remote_state" "network_remotestate" {
 
   config {
     bucket = "tf-state.shahadarsh.com"
-    key = "vault/vpc/terraform.tfstate"
+    key = "aws-vpc-terraform/vpc/terraform.tfstate"
     region = "us-east-1"
   }
 }
@@ -37,6 +37,7 @@ resource "aws_security_group" "nginx_sg" {
     from_port = 0
     protocol = "-1"
     to_port = 0
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   ingress {
