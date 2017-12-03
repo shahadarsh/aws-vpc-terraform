@@ -1,3 +1,6 @@
+#access_key = "<This value is read from the local aws credentials profile>"
+#secret_key = "<This value is read from the local aws credentials profile>"
+
 nginx_ami = "ami-d651b8ac"
 
 key_pair_name = "key_hashicorp"
