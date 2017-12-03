@@ -9,3 +9,11 @@ output "private_subnets" {
 output "public_subnets" {
   value = "${module.vpc.public_subnets}"
 }
+
+output "nat_ids" {
+  value = "${module.vpc.nat_ids}"
+}
+
+output "bastion_host_sg_id" {
+  value = "${aws_security_group.bastion_host_sg.id}"
+}

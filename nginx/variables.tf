@@ -1,11 +1,11 @@
-variable "bastion_host_ami" {
+variable "nginx_ami" {
   type = "string"
-  description = "ami used by Bastion Host"
+  description = "Ami for nginx"
 }
 
 variable "key_pair_name" {
   type = "string"
-  description = "Key pair name associated with bastion instance"
+  description = "Key pair name associated with instance"
 }
 
 variable "availability_zones" {
